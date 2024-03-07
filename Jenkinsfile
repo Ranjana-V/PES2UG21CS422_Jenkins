@@ -10,7 +10,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh './output'
+                // Introducing an intentional mistake by using a non-existent command
+                sh './invalid_command'
             }
         }
         stage('Deploy') {
