@@ -7,7 +7,7 @@ pipeline{
         sh 'g++ main.cpp -o output'
       }
     }
-    stage("Test'){
+    stage('Test'){
           steps {
             sh './output'
               }
